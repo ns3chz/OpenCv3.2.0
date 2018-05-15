@@ -1,5 +1,6 @@
 package cn.hu.zc.opencv;
 
+import android.media.MediaMetadataRetriever;
 import android.os.Bundle;
 
 import org.opencv.android.BaseLoaderCallback;
@@ -33,6 +34,7 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
                 case LoaderCallbackInterface.SUCCESS: {
                     Log.i(TAG, "OpenCV loaded successfully");
                     mOpenCvCameraView.enableView();
+                    //
                 }
                 break;
                 default: {
