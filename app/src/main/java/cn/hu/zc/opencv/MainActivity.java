@@ -26,6 +26,7 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
     private MenuItem             mItemSwitchCamera = null;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
+        
         @Override
         public void onManagerConnected(int status) {
             switch (status) {
